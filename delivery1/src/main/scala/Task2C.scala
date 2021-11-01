@@ -16,8 +16,8 @@ object Task2C extends App {
         }
     }.start();
 
-    def increaseCounter(): Unit = {
-      counter += 1
+    def increaseCounter(): Unit = synchronized {
+        counter += 1
     }
 
     def printCounter(): Unit = {
