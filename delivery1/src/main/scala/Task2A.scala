@@ -8,7 +8,4 @@ object Task2A extends App {
         }
         t
     }
-
-    second_foo(first_foo())
-
 }

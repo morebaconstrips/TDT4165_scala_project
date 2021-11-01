@@ -344,3 +344,32 @@ Caused by: java.lang.IllegalArgumentException: 33 is not a valid line number, al
 [0m2021.11.01 18:08:03 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task2C.scala[0m
 [0m2021.11.01 18:08:06 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task2C.scala[0m
 [0m2021.11.01 18:08:28 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task2C.scala[0m
+Nov 01, 2021 6:10:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1936
+Nov 01, 2021 6:10:29 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1943
+Nov 01, 2021 6:10:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1949
+Nov 01, 2021 6:10:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1954
+Nov 01, 2021 6:10:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1960
+Nov 01, 2021 6:10:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1965
+Nov 01, 2021 6:10:37 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1971
+Nov 01, 2021 6:10:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1976
+[0m2021.11.01 18:11:08 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task1A.scala[0m
+[0m2021.11.01 18:11:14 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task1A.scala[0m
+[0m2021.11.01 18:11:33 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task1C.scala[0m
+[0m2021.11.01 18:12:01 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task2A.scala[0m
+[0m2021.11.01 18:12:07 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task2A.scala[0m
+[0m2021.11.01 18:12:07 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task2A.scala[0m
+Nov 01, 2021 6:12:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2024
+[0m2021.11.01 18:12:13 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task1A.scala[0m
+[0m2021.11.01 18:12:13 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task1A.scala[0m
+Nov 01, 2021 6:12:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2033
+[0m2021.11.01 18:12:17 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/delivery1/src/main/scala/Task2A.scala[0m
