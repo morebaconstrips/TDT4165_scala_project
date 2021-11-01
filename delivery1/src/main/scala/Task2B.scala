@@ -1,7 +1,7 @@
 object Task2B extends App {
   private var counter: Int = 0
 
-  for(i <- 1 to 200000) {
+  for(i <- 1 to 2) {
     new Thread() {
       override def run() : Unit = {
         increaseCounter();
