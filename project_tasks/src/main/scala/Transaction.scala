@@ -1,4 +1,6 @@
 import exceptions._
+
+import java.util.concurrent.locks.{ReadWriteLock, ReentrantReadWriteLock}
 import scala.collection.mutable
 
 object TransactionStatus extends Enumeration {
@@ -10,21 +12,47 @@ class TransactionQueue {
     // TODO
     // project task 1.1
     // Add datastructure to contain the transactions
+    val queue : mutable.Queue[Transaction] = new mutable.Queue[Transaction]();
+    val queueLock : ReadWriteLock = new ReentrantReadWriteLock();
 
     // Remove and return the first element from the queue
-    def pop: Transaction = ???
+    def pop: Transaction = {
+      queueLock.writeLock().lock();
+      val transaction : Transaction = queue.dequeue();
+      queueLock.writeLock().unlock();
+
+      return transaction;
+    }
 
     // Return whether the queue is empty
-    def isEmpty: Boolean = ???
+    def isEmpty: Boolean = {
+      queueLock.readLock().lock();
+      val isEmpty : Boolean = queue.isEmpty;
+      queueLock.readLock().unlock();
+
+      return isEmpty;
+    }
 
     // Add new element to the back of the queue
-    def push(t: Transaction): Unit = ???
+    def push(t: Transaction): Unit = {
+      queueLock.writeLock().lock();
+      queue.enqueue(t);
+      queueLock.writeLock().unlock();
+    }
 
     // Return the first element from the queue without removing it
-    def peek: Transaction = ???
+    def peek: Transaction = {
+      queueLock.readLock().lock();
+      val transaction: Transaction = queue.front;
+      queueLock.readLock().unlock();
+
+      return transaction;
+    }
 
     // Return an iterator to allow you to iterate over the queue
-    def iterator: Iterator[Transaction] = ???
+    def iterator: Iterator[Transaction] = {
+      return queue.iterator;
+    }
 }
 
 class Transaction(val transactionsQueue: TransactionQueue,
