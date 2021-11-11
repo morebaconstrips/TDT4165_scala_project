@@ -730,3 +730,59 @@ WARNING: Unmatched cancel notification for request id 555
 [0m2021.11.11 11:14:32 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
 [0m2021.11.11 11:14:35 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
 [0m2021.11.11 11:15:14 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+Nov 11, 2021 11:29:41 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 695
+[0m2021.11.11 11:32:29 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:32:32 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Account.scala[0m
+[0m2021.11.11 11:32:32 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+Nov 11, 2021 11:32:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 732
+[0m2021.11.11 11:32:36 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:32:42 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:32:45 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:32:52 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:32:54 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:32:56 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:33:32 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:36:42 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:36:51 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:36:57 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:36:59 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 11:37:00 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+Nov 11, 2021 11:37:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 875
+Nov 11, 2021 11:40:02 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 886
+Nov 11, 2021 11:40:17 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 893
+Nov 11, 2021 11:47:19 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 918
+Nov 11, 2021 11:47:42 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 926
+[0m2021.11.11 12:00:17 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:00:23 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:00:44 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:00:50 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:01:19 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:01:19 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:03:20 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:03:48 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+[0m2021.11.11 12:03:48 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Transaction.scala[0m
+Nov 11, 2021 12:07:53 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1137
+Nov 11, 2021 12:08:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1148
+Nov 11, 2021 12:12:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1162
+[0m2021.11.11 12:18:35 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+[0m2021.11.11 12:19:07 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+[0m2021.11.11 12:19:09 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+[0m2021.11.11 12:19:17 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+[0m2021.11.11 12:19:23 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+[0m2021.11.11 12:19:25 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+Nov 11, 2021 12:20:44 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1387
+Nov 11, 2021 12:21:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1392
+[0m2021.11.11 12:25:16 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m
+[0m2021.11.11 12:27:01 WARN  no build target for: /home/gabriele/Documents/erasmus/courses/programming_languages/TDT4165_scala_project/project_tasks/src/main/scala/Bank.scala[0m

@@ -35,11 +35,14 @@ class Bank(val allowedAttempts: Integer = 3) {
                     transactionsQueue.push(transaction);
                     processTransactions;
                 }
+                else {
+                    processedTransactions.push(transaction)
+                }
             }
         }
         thread.start();
     }
-    
+
 
     def addAccount(initialBalance: Double): Account = {
         new Account(this, initialBalance)
