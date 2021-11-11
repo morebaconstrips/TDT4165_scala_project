@@ -1,6 +1,6 @@
 import exceptions._
 
-import java.util.concurrent.locks.{ReadWriteLock, ReentrantReadWriteLock}
+import java.util.concurrent.locks.{Lock, ReadWriteLock, ReentrantLock, ReentrantReadWriteLock}
 import scala.collection.mutable
 
 object TransactionStatus extends Enumeration {
@@ -64,24 +64,50 @@ class Transaction(val transactionsQueue: TransactionQueue,
 
   var status: TransactionStatus.Value = TransactionStatus.PENDING
   var attempt = 0
+  var lock : Lock = new ReentrantLock();
 
-  override def run: Unit = {
+  override def run(): Unit = {
 
-      def doTransaction() = {
+      def doTransaction(): Either[Unit, String] = {
+          attempt += 1;
           // TODO - project task 3
           // Extend this method to satisfy requirements.
-          from withdraw amount
-          to deposit amount
+          var either : Either[Unit, String] = from.withdraw(amount);
+
+          if(either.isRight) {
+            //Something went wrong. Putting the money back
+            from.deposit(amount);
+            return either;
+          }
+
+          either = to.deposit(amount);
+
+          if(either.isRight) {
+            //Something went wrong. Putting the money back from 'from' and withdrawing from 'to'
+            from.deposit(amount);
+            to.withdraw(amount);
+            return either;
+          }
+
+          status = TransactionStatus.SUCCESS;
+
+          return Left();
       }
 
       // TODO - project task 3
       // make the code below thread safe
-      if (status == TransactionStatus.PENDING) {
-          doTransaction
+      lock.lock();
+      if (attempt < allowedAttemps && status == TransactionStatus.PENDING) {
+          val either = doTransaction();
+
+          if(either.isRight) {
+            //Something went wrong.
+            
+          }
+
           Thread.sleep(50) // you might want this to make more room for
                            // new transactions to be added to the queue
       }
-
-
+      lock.unlock();
     }
 }
