@@ -13,7 +13,7 @@ class TransactionQueue {
     // project task 1.1
     // Add datastructure to contain the transactions
     val queue : mutable.Queue[Transaction] = new mutable.Queue[Transaction]();
-    val queueLock : ReadWriteLock = new ReentrantReadWriteLock();
+    val queueLock : ReadWriteLock = new ReentrantReadWriteLock(); 
 
     // Remove and return the first element from the queue
     def pop: Transaction = {
