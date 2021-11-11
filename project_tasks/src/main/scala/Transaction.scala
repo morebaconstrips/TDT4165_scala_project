@@ -64,50 +64,45 @@ class Transaction(val transactionsQueue: TransactionQueue,
 
   var status: TransactionStatus.Value = TransactionStatus.PENDING
   var attempt = 0
-  var lock : Lock = new ReentrantLock();
 
   override def run(): Unit = {
 
-      def doTransaction(): Either[Unit, String] = {
+      def doTransaction(): Unit = {
           attempt += 1;
           // TODO - project task 3
           // Extend this method to satisfy requirements.
           var either : Either[Unit, String] = from.withdraw(amount);
 
           if(either.isRight) {
-            //Something went wrong. Putting the money back
-            from.deposit(amount);
-            return either;
+            //Something went wrong
+            status = TransactionStatus.PENDING;
+            return;
           }
 
           either = to.deposit(amount);
 
           if(either.isRight) {
-            //Something went wrong. Putting the money back from 'from' and withdrawing from 'to'
+            //Something went wrong. Putting the money back from 'from'
+            status = TransactionStatus.PENDING;
             from.deposit(amount);
-            to.withdraw(amount);
-            return either;
+            return;
           }
 
           status = TransactionStatus.SUCCESS;
-
-          return Left();
       }
 
       // TODO - project task 3
       // make the code below thread safe
-      lock.lock();
+      // This code is thread safe, ensured by task 2
       if (attempt < allowedAttemps && status == TransactionStatus.PENDING) {
-          val either = doTransaction();
 
-          if(either.isRight) {
-            //Something went wrong.
-            
-          }
+          doTransaction();
 
           Thread.sleep(50) // you might want this to make more room for
                            // new transactions to be added to the queue
       }
-      lock.unlock();
+      else if(attempt < allowedAttemps) {
+        status = TransactionStatus.FAILED;
+      }
     }
 }
