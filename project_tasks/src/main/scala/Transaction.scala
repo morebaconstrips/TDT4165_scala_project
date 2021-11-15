@@ -99,16 +99,16 @@ class Transaction(val transactionsQueue: TransactionQueue,
       // TODO - project task 3
       // make the code below thread safe
       // This code is thread safe, due to locks in the account
-    // Add id to Account to prevent deadlocks.
       if (attempt < allowedAttemps && status == TransactionStatus.PENDING) {
 
           doTransaction();
 
+          if(attempt >= allowedAttemps && status == TransactionStatus.PENDING) {
+            status = TransactionStatus.FAILED;
+          }
+
           Thread.sleep(50) // you might want this to make more room for
                            // new transactions to be added to the queue
-      }
-      else if(attempt >= allowedAttemps) {
-        status = TransactionStatus.FAILED;
       }
     }
 }

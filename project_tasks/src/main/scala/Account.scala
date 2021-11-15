@@ -23,7 +23,7 @@ class Account(val bank: Bank, initialBalance: Double) {
 
         balance.writeLock();
 
-        if(balance.amount > amount) {
+        if(balance.amount >= amount) {
             if(amount >= 0) {
                 balance.amount -= amount;
                 either = Left();
