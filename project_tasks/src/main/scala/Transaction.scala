@@ -18,10 +18,15 @@ class TransactionQueue {
     // Remove and return the first element from the queue
     def pop: Transaction = {
       queueLock.writeLock().lock();
-      val transaction : Transaction = queue.dequeue();
-      queueLock.writeLock().unlock();
 
-      return transaction;
+      try {
+        val transaction : Transaction = queue.dequeue();
+
+        return transaction;
+      }
+      finally {
+        queueLock.writeLock().unlock();
+      }
     }
 
     // Return whether the queue is empty
@@ -93,7 +98,8 @@ class Transaction(val transactionsQueue: TransactionQueue,
 
       // TODO - project task 3
       // make the code below thread safe
-      // This code is thread safe, ensured by task 2
+      // This code is thread safe, due to locks in the account
+    // Add id to Account to prevent deadlocks.
       if (attempt < allowedAttemps && status == TransactionStatus.PENDING) {
 
           doTransaction();
@@ -101,7 +107,7 @@ class Transaction(val transactionsQueue: TransactionQueue,
           Thread.sleep(50) // you might want this to make more room for
                            // new transactions to be added to the queue
       }
-      else if(attempt < allowedAttemps) {
+      else if(attempt >= allowedAttemps) {
         status = TransactionStatus.FAILED;
       }
     }

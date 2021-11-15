@@ -1,3 +1,5 @@
+import java.util.NoSuchElementException
+
 class Bank(val allowedAttempts: Integer = 3) {
 
     private val transactionsQueue: TransactionQueue = new TransactionQueue()
@@ -29,14 +31,18 @@ class Bank(val allowedAttempts: Integer = 3) {
 
         val thread = new Thread {
             override def run: Unit = {
-                val transaction = transactionsQueue.pop;
-                transaction.run();
-                if (transaction.status == TransactionStatus.PENDING) {
-                    transactionsQueue.push(transaction);
-                    processTransactions;
-                }
-                else {
-                    processedTransactions.push(transaction)
+                try {
+                    val transaction = transactionsQueue.pop;
+                    transaction.run();
+                    if (transaction.status == TransactionStatus.PENDING) {
+                        transactionsQueue.push(transaction);
+                        processTransactions;
+                    }
+                    else {
+                        processedTransactions.push(transaction)
+                    }
+                } catch {
+                    case e: NoSuchElementException => //Do nothing. Thread has no work to do;
                 }
             }
         }
