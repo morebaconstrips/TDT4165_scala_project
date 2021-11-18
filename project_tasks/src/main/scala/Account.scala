@@ -40,6 +40,7 @@ class Account(val bank: Bank, initialBalance: Double) {
 
         return either;
     }
+
     def deposit (amount: Double): Either[Unit, String] = {
         var either : Either[Unit, String] = null;
 
@@ -57,7 +58,8 @@ class Account(val bank: Bank, initialBalance: Double) {
 
         return either;
     }
-    def getBalanceAmount: Double       = {
+
+    def getBalanceAmount: Double = {
         balance.readLock();
 
         val amount = balance.amount;
