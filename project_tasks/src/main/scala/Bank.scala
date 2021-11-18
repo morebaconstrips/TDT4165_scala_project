@@ -11,10 +11,11 @@ class Bank(val allowedAttempts: Integer = 3) {
         // create a new transaction object and put it in the queue
         // spawn a thread that calls processTransactions
 
+        val newTransaction: Transaction = new Transaction(transactionsQueue, processedTransactions, from, to, amount, allowedAttempts);
+        transactionsQueue.push(newTransaction);
+
         val thread = new Thread {
             override def run: Unit = {
-                val newTransaction: Transaction = new Transaction(transactionsQueue, processedTransactions, from, to, amount, allowedAttempts);
-                transactionsQueue.push(newTransaction);
                 processTransactions
             }
         }
